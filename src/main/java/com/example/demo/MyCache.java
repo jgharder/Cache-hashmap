@@ -31,10 +31,12 @@ public static Map<Integer, String> cache= new HashMap<>();
     public void delete(int key){
        cache.remove(key);
     }
-
-    public void setTTL(int key, int ttl) throws InterruptedException {
+//virker ikke :/
+  /*  public void setTTL(int key, int ttl) throws InterruptedException {
         System.out.println("This Cache has been saved for: "+ttl+" seconds");
         TimeUnit.SECONDS.sleep(ttl);
         cache.remove(key);
     }
+
+   */
 }
